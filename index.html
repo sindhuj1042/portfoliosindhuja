@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+<div class="whole">
+  <div class="container">
+    
+
+        <div class="navbar-right">
+            <a  href="https://github.com/sindhuj1042" ><i class="fa fa-github"></i></a>
+            <a href="C:\Users\kirut\OneDrive\Desktop\portfolio\portfolio\portfolio\sindhu-c.jpg"><i class="fa fa-linkedin"></i></a>
+        </div>
+    
+
+      
+    <div class="line"></div>
+    <div class="pic">
+    <img class="picin" src="sindhu.jpg" alt="Creative Portfolio">
+    </div>
+    <h1 class="name" id="name">Hi Im Sindhuja..</h1>
+    <style>
+        .name{
+            margin-top: 10px;
+        }
+    </style>
+    <div class="line2"></div>
+    
+  </div>
+</div>
+
+  <div class="container2">
+    <h2 class="aboutme">About me</h2>
+    <p>Hi, I'm Sindhuja, a  20-year-old passionate developer and student from Tamil Nadu. I'm always eager to learn new things and explore new technologies. I'm also a strong believer in the power of open source software and the importance of giving back to the community.
+
+      , and I've been hooked ever since. I love the challenge of solving problems and building things that people can use. I'm also fascinated by the way that technology can be used to make a positive impact on the world.
+        
+        I'm currently studying Artificial intelligence and data science. In my spare time, I enjoy working on open source projects, reading tech blogs, and attending hackathons. I'm also a big fan of music and movies.
+        
+        I'm excited to be a part of the tech community, and I'm looking forward to making a difference in the world through my work.
+        
+        I hope this passage is good. I tried to make it informative and engaging, and to highlight your passion for development and learning. I also included some personal details to make the passage more relatable.
+        
+        </p>
+    <button type="button" class="oval-button">Contact me</button>
+    <button type="button" class="oval-button">Download CV</button>
+   </div> 
+ 
+        <h1 class="certi-head">Certificates</h1>
+        <div class="imgs">
+        <img class="mm" src="scerti.jpg" height="300px">
+        <img class="mm" src="scerti2.jpg">
+        <img class="mm" src="sindhu-c.jpg">
+        </div>
+<div class="new">
+    <svg viewBox="0 0 500 200">
+        <path d="M 0,100 C 150,200 350,0 500,100 L 500,00 L 0,0"></path>
+    </svg>
+    <h1 style="margin-top:400px" class="project-head">My Projects..</h1>
+    <div class="carousel-container">
+        <div class="text">
+            <h2 class="pro1">Web Development</h2>
+            <p>Created an online code editor for html css and javascript</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="pro3.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro2.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="pro3.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="mouse.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="mouse2.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="mouse3.png" alt="Image 3">
+                </div>
+            </div>
+        </div>
+
+        <div class="text">
+            <h2 class="pro1">Machine Learning</h2>
+            <p>Created a virtual mouse using openCV</p>
+        </div>
+    </div>
+    <div class="carousel-container">
+        <div class="text">
+            <h2 class="pro1">Full Stack</h2>
+            <p>Created a total carrer guidelince website which helps in placement preparation and road map for the selected domain</p>
+        </div>
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="htm.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="htm2.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="htm3.jpg" alt="Image 3">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg"></div>
+<div class="final">
+    <div class="container1">
+        
+        <form action="/submit_form" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <style>
+        .container1 h1{
+            position: relative;
+              bottom:100px;
+
+        }
+    </style>
+</div>
+    <script>
+        // JavaScript to control the automatic slide change
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.querySelectorAll(".carousel-item");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.transform = "translateX(-100%)";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.transform = "translateX(0)";
+            setTimeout(showSlides, 4000); // Change slide every 4 seconds
+        }
+    </script>
+</body>
+</html>
